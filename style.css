@@ -181,18 +181,20 @@ main{
     width:100%;
     height:400px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position:relative;
- }
- .bg-img::before{
-    content: "";
-     z-index: -1;
+    display: flex;
+      align-items: center;
+      justify-content: center;
  }
 
- .join-content{
+
+ /* .join-content{
     position:absolute;
     top:100px;
     left:300px;
- }
+ } */
  .join-content h3{
     font-size:50px;
     font-weight: bold;
@@ -278,7 +280,7 @@ main{
 
 
 /* resposive design */
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) and (min-width:100px){
     .header{
         width:576px;
         margin:0 auto;
@@ -348,6 +350,7 @@ main{
     }
     .plant-lover-content{
         padding:50px 0;
+        
     }
     .plant-lover-content h2{
         font-size:30px;
@@ -361,20 +364,42 @@ main{
     .join-section{
         width:576px;
         margin:0 auto;
+        padding-top:360px;
+        
     }
-    
+    .bg-img{
+        width:95%;
+        background-image: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
+    .input-section{
+        max-width:410px;
+    }
+
+    .join-section h3{
+        font-size:30px;
+        font-weight: bold;
+    }
     /* footer section styles  */
     footer{
-        width:576px;
+        width:450px;
         margin:0 auto;
     }
     .footer-section{
         grid-template-columns: 1fr;
     }
     .link-column{
-        width:576px;
         justify-content:flex-start;
         gap:20px;
+    }
+    .footer-content img{
+        width:180px;
+        height:109px;
+    }
+    .footer-content p{
+        width:440px;
+        padding-bottom:15px;
     }
 }
