@@ -19,7 +19,7 @@
 .color-1{
     color:#8987A1;
 }
-main{
+.bg-w{
     width:1140px;
     margin:0 auto;
 }
@@ -131,7 +131,8 @@ main{
     align-items:center;
     justify-content:space-between;
     height:37.3125rem;
-    padding:13rem 0;
+    padding-top:13rem;
+    padding-bottom: 6rem;
     position:relative;
 }
 .image-container{
@@ -166,6 +167,54 @@ main{
     margin:20px 0;
     font-size:1.25rem;
 }
+
+/* join section style  */
+ .join-section{
+    width:1440px;
+    margin:0 auto;
+    padding:50px 0;
+ }
+ .bg-img{
+    background-image: url("./image/news-letter-bg.png");
+    width:100%;
+    height:400px;
+    position:relative;
+ }
+ .join-content{
+    position: absolute;
+    top:160px;
+    left:305px;
+ }
+ .join-content h3{
+    font-size:50px;
+    font-weight: bold;
+    color:#ffffff;
+    text-align:center;
+    margin-bottom:25px;
+ }
+ .input-section{
+    width:830px;
+    margin:0 auto;
+    display:flex;
+ }
+ .input-section input[type="email"]{
+    width:80%;
+    padding:10px 20px;
+    border:1px solid #ffffff;
+ }
+ .input-section input::placeholder{
+    font-size:1rem;
+    color:#8987A1;
+ }
+ .input-section button{
+    width:20%;
+    padding:10px 0;
+ }
+
+ 
+
+
+
 
 
 
